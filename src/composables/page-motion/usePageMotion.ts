@@ -71,7 +71,7 @@ export const usePageMotion = (): PageMotionReturn => {
         observer?.unobserve(entry.target);
         pendingTargets.delete(entry.target);
       });
-    }, { rootMargin: '0px 0px -32px 0px', threshold: 0.08 });
+    }, { rootMargin: '0px 0px 160px 0px', threshold: 0 });
     mutations = new MutationObserver(scheduleRegistration);
     if (root.value) mutations.observe(root.value, { childList: true, subtree: true });
     preference.addEventListener('change', updatePreference);

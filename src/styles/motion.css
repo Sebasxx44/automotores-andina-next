@@ -2,18 +2,13 @@
 /* Scroll reveals keep content visible until progressively enhanced by the observer. */
 @media (prefers-reduced-motion: no-preference) {
   .motion-enter {
-    animation: andina-reveal 850ms cubic-bezier(.2,.7,.2,1) both;
+    animation: andina-reveal 480ms ease-out both;
     animation-delay: var(--motion-delay, 0ms);
   }
 
-  .hero-car {
-    translate: 0 var(--hero-shift, 0px);
-    scale: var(--hero-scale, 1);
-  }
-
-  .route-enter-active { transition: opacity 300ms ease, translate 450ms cubic-bezier(.2,.7,.2,1); }
+  .route-enter-active { transition: opacity 220ms ease; }
   .route-leave-active { position: absolute; inset: 0; width: 100%; pointer-events: none; transition: opacity 160ms ease; }
-  .route-enter-from { opacity: 0; translate: 0 12px; }
+  .route-enter-from { opacity: 0; }
   .route-leave-to { opacity: 0; }
 
   .button-ta > svg, .text-link > svg, .hero-explore > svg { transition: translate 350ms cubic-bezier(.2,.7,.2,1); }
@@ -29,8 +24,8 @@
 .desktop-nav > a:hover::after, .desktop-nav > a.router-link-active::after { scale: 1 1; }
 
 @keyframes andina-reveal {
-  from { opacity: 0; translate: 0 24px; }
-  to { opacity: 1; translate: 0 0; }
+  from { opacity: .65; }
+  to { opacity: 1; }
 }
 @keyframes andina-scroll-hint {
   0%, 100% { translate: 0 0; opacity: .6; }
@@ -38,6 +33,5 @@
 }
 @media (prefers-reduced-motion: reduce) {
   .motion-enter, .hero-scroll > svg { animation: none !important; }
-  .hero-car { translate: none; scale: none; }
   .route-enter-active, .route-leave-active { transition: none; }
 }

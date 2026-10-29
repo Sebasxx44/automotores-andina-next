@@ -1,7 +1,7 @@
 <template>
   <div class="home-view">
     <div class="announcement"><span>Una nueva manera de vivir el camino.</span><RouterLink to="/catalogo">Encuentra tu próximo vehículo <ArrowUpRight :size="12" /></RouterLink></div>
-    <section :ref="sceneElements.stage" class="hero-stage">
+    <section class="hero-stage">
       <div class="hero-intro container"><div class="hero-kicker"><span /> MÁS QUE VEHÍCULOS. NUEVOS COMIENZOS.</div><ActionHeaderTA title="El camino cambia.&#10;La emoción permanece." /><p>Hay vehículos que te llevan. Y otros que te mueven.</p></div>
       <div v-if="hero.current.value" class="hero-visual">
         <Transition name="hero-fade" mode="out-in"><img :key="hero.current.value.id" class="hero-car" :src="hero.current.value.image" :alt="`${hero.current.value.title}, fotografía original de Automotores Andina`" width="1440" height="960" fetchpriority="high" /></Transition>
@@ -38,7 +38,6 @@ import ActionHeaderTA from '@/components/shared/ActionHeaderTA.vue';
 import ButtonTA from '@/components/ButtonTA.vue';
 import VehicleCardTA from '@/components/VehicleCardTA.vue';
 import { useHome } from '@/modules/home/composables/useHome';
-import { useHeroScene } from '@/modules/home/composables/scene/useHeroScene';
 import CommunitySectionTA from '@/modules/home/components/CommunitySectionTA.vue';
 import ScrollVectorTA from '@/components/ScrollVectorTA.vue';
 // PROPS/CONSTANTS/ROUTE/RUNTIME CONFIG
@@ -47,7 +46,6 @@ const featuredBrands = [{ name: 'Audi', label: 'Audi', className: 'brand-audi' }
 // STATE (refs/reactive)
 // COMPOSABLES(useX)
 const { showcase, discovery, hero } = useHome();
-const { elements: sceneElements } = useHeroScene();
 // STORE
 // COMPUTED
 // FUNCTIONS

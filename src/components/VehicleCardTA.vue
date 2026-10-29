@@ -37,8 +37,8 @@ const { actions: favoriteActions } = useVehicleFavorites();
 </script>
 
 <style scoped>
-.vehicle-card { min-width: 0; overflow: hidden; border: 1px solid #262628; border-radius: 28px; background: #0e0e0e; transition: border-color .25s, transform .25s; }
-.vehicle-card:hover { border-color: #54545a; transform: translateY(-4px); }
+.vehicle-card { min-width: 0; overflow: hidden; border: 1px solid #262628; border-radius: 28px; background: #0e0e0e; transition: border-color .25s; }
+.vehicle-card:hover { border-color: #54545a; }
 .vehicle-card__media { position: relative; aspect-ratio: 16 / 11; background: #1d1d1f; overflow: hidden; }
 .vehicle-card__media a { display: block; height: 100%; }
 .vehicle-card__media img { width: 100%; height: 100%; object-fit: cover; transition: transform .6s; }
