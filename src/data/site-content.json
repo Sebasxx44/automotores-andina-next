@@ -1,0 +1,721 @@
+{
+  "sourceUrl": "https://www.automotoresandina.com.co/",
+  "capturedAt": "2026-10-29",
+  "routes": [
+    "/",
+    "/catalogo",
+    "/ficha_tecnica/:id",
+    "/vender",
+    "/financiar",
+    "/servicios",
+    "/nosotros",
+    "/preguntas",
+    "/terminos_y_condiciones",
+    "/politica_de_privacidad",
+    "/autorizacion_datos_personales_igas"
+  ],
+  "company": {
+    "name": "Automotores Andina",
+    "legalName": "AUTOMOTORES ANDINA SAS",
+    "email": "infoautomotoresandina@gmail.com",
+    "phone": "3026606878",
+    "address": "Calle 7 # 25-02",
+    "city": "Pereira - Risaralda",
+    "facebook": "https://www.facebook.com/automotoresandina",
+    "instagram": "https://www.instagram.com/automotores_andina/",
+    "tiktok": "https://www.tiktok.com/@automotoresandina8",
+    "whatsapp": "https://wa.me/573026606878",
+    "financingUrl": "https://automotoresandina.financiakarz.com/",
+    "hours": {
+      "weekdays": "Lunes a viernes · 8:00 a. m. – 6:00 p. m.",
+      "saturday": "Sábados · 9:00 a. m. – 2:00 p. m.",
+      "sunday": "Domingos · cerrado"
+    }
+  },
+  "locations": [
+    {
+      "name": "AUTOMOTORES ANDINA - PRINCIPAL",
+      "address": "AV SUR 23-31",
+      "city": "Pereira - Risaralda",
+      "phone": "3148816462"
+    },
+    {
+      "name": "Amatista",
+      "address": "Cra. 18E #42B 200",
+      "city": "Pereira - Risaralda",
+      "phone": "3127788730"
+    },
+    {
+      "name": "La Quinta Club House",
+      "address": "Cl. 46 #19 - 80",
+      "city": "Pereira - Risaralda",
+      "phone": "3148816462"
+    },
+    {
+      "name": "La 10",
+      "address": "Cra 10 9-53 ( fábrica )",
+      "city": "Pereira - Risaralda",
+      "phone": "3148816462"
+    }
+  ],
+  "about": {
+    "subtitle": "Es más que un vehículo, es una experiencia de vida",
+    "intro": "Somos una familia comprometida con acercarte a cumplir tus mayores sueños y anhelos automovilísticos. Desde hace más de 11 años nos hemos enfocado en conectar a miles de personas con el vehículo que siempre han deseado. Nuestra misión no es otra, que brindarte la mejor experiencia de venta y compra de vehículos usados en excelente estado.",
+    "history": [
+      "Automotores Andina nació del sueño de ofrecer un servicio diferente, integral y de calidad en el sector automotor. Fundada por Juan Manuel Restrepo, hoy Gerente General, esta empresa representa años de trabajo constante, sacrificios y metas cumplidas.",
+      "Desde el inicio, nuestro propósito fue claro: crear una empresa que ofreciera una experiencia única en la compra y venta de vehículos usados, con un portafolio completo que se adaptara a las necesidades reales de nuestros clientes.",
+      "Han pasado más de 11 años desde ese primer día, y con orgullo podemos decir que Automotores Andina se ha convertido en la empresa con el inventario de vehículos más grande del Eje Cafetero, marcando la diferencia en cada proceso, cada trato y cada cliente satisfecho.",
+      "Este crecimiento no sería posible sin el liderazgo y compromiso de Laura Herrera Montoya, Gerente Administrativa y esposa de Juan Manuel, quien ha sido pieza clave en la consolidación de este proyecto familiar y empresarial.",
+      "Ver lo que hemos construido, cómo hemos evolucionado y hacia dónde vamos, nos llena de orgullo. Hemos logrado mucho, pero también sabemos que aún queda camino por recorrer. No descansaremos hasta posicionarnos como la mejor empresa del Eje Cafetero en nuestro sector."
+    ],
+    "image": "/assets/automotoresandina.webp",
+    "video": "https://youtu.be/GX-vespRhMs"
+  },
+  "stats": [
+    {
+      "value": 11,
+      "label": "Años de experiencia"
+    },
+    {
+      "value": 3000,
+      "label": "Vehículos entregados"
+    },
+    {
+      "value": 4000,
+      "label": "Clientes satisfechos"
+    },
+    {
+      "value": 20,
+      "label": "Aliados verificados"
+    }
+  ],
+  "faqs": [
+    {
+      "question": " ¿Cómo funciona el proceso de venta de un vehículo?",
+      "answer": "Es muy sencillo. Simplemente debes acercarte a nuestra sede ubicada en Pereira, Risaralda, Avenida Sur #23 - 32, en el horario de 9:00 AM a 5:00 PM de lunes a viernes, o los sábados de 10:00 AM a 1:00 PM. No requieres cita previa.",
+      "list": [
+        "Debes llevar tu vehículo limpio.",
+        "Le tomaremos fotografías profesionales.",
+        "Te solicitaremos los datos del vehículo.",
+        "Publicamos en todas nuestras plataformas."
+      ]
+    },
+    {
+      "question": "¿Puedo seguir usando mi vehículo mientras lo vendo?",
+      "answer": "Sí, con nuestro modelo de intermediación podrás seguir usando el vehículo sin problema",
+      "list": []
+    },
+    {
+      "question": "¿En qué plataformas se enseñará mi vehículo?",
+      "answer": "Las plataformas de venta principales son:",
+      "list": [
+        "Mercado Libre con plan Premium",
+        "Vende Tu Nave",
+        "Instagram",
+        "Facebook (Marketplace)",
+        "Página Web"
+      ]
+    },
+    {
+      "question": "¿Cuánto cobran por vender mi vehículo?",
+      "answer": "El proceso de venta no tiene ningún costo. Sin embargo, si el vehículo se vende satisfactoriamente, nuestra comisión es del 4%.",
+      "list": []
+    },
+    {
+      "question": "¿Puedo dejar mi vehículo en consignación?",
+      "answer": "Efectivamente, contamos con un modelo de venta de consignación, en la cual dejas tu vehículo en nuestras instalaciones, hasta que se venda. Esto genera mucha más eficiencia en la compra, ya que las personas que se acercan a la sede pueden verlo y experimentarlo casi que de inmediato. Adicionalmente, el proceso de venta y negociación es mucho más ágil.",
+      "list": []
+    },
+    {
+      "question": "¿Solo venden vehículos de alta gama?",
+      "answer": "No, vendemos vehículos de todas las gamas; sin embargo, nuestra mayor parte de inventario se refleja en media y alta.",
+      "list": []
+    }
+  ],
+  "services": [
+    {
+      "title": "Trámites de traspaso",
+      "description": "¿Vas a vender o comprar un vehículo? Nosotros te acompañamos en todo el proceso de traspaso para que la propiedad del vehículo quede registrada correctamente y sin contratiempos.",
+      "image": "/assets/icon-5.png"
+    },
+    {
+      "title": "Traslado de cuenta",
+      "description": "Si necesitas cambiar el registro de tu vehículo de un municipio a otro, realizamos el traslado de cuenta de forma rápida y sin complicaciones.",
+      "image": "/assets/icon-4.png"
+    },
+    {
+      "title": "Radicados de cuenta",
+      "description": "Gestionamos el radicado de cuenta de tu vehículo ante el organismo de tránsito donde esté inscrito, garantizando que el proceso quede legalmente registrado.",
+      "image": "/assets/icon-3.png"
+    },
+    {
+      "title": "Pignoración",
+      "description": "¿Tu vehículo está financiado o ya terminaste de pagarlo? Nosotros tramitamos la inscripción o el levantamiento de prenda según corresponda, para que tu vehículo quede libre o correctamente respaldado.",
+      "image": "/assets/icon-1.png"
+    }
+  ],
+  "reviews": [
+    {
+      "name": "Carolina Marín Restrepo",
+      "date": "Hace 2 meses",
+      "text": " Excelente experiencia. La empresa es 💯% confiable, empática con sus clientes y se esmeran porque recibamos una muy buena calidad en el vehículo usado que estamos adquiriendo y que cumpla con lo que estamos buscando.",
+      "starts": 5
+    },
+    {
+      "name": "Valentina Loaiza",
+      "date": "Hace 1 mes",
+      "text": "Tuve una excelente experiencia con la empresa. Desde el inicio sentí mucha confianza por el respaldo y reconocimiento que tienen como marca. La venta de mi propiedad fue muy rápida, lo cual me dio tranquilidad y demuestra la gran vitrina comercial que manejan. En general, quedé muy contenta con el servicio, los volvería a elegir y los recomiendo totalmente.",
+      "starts": 5
+    },
+    {
+      "name": "Kelly Tatiana",
+      "date": "Hace 2 semanas",
+      "text": "Cordial saludo, Los mejores indudablemente. Gracias al acompañamiento del Asesor Mauricio que me acompañó en todo el proceso e hizo posible cumplir mi sueño. Gracias siempre Automotores Andina. ",
+      "starts": 4
+    },
+    {
+      "name": "Juan Pablo Orrego",
+      "date": "Hace 3 meses",
+      "text": "Vendí mi vehículo con ellos, desde el inicio que nos brindaron la información del proceso, hasta que se culminó, muy buen servicio y seriedad. Las instalaciones son impecables, da mucha tranquilidad y la verdad en menos de 2 semanas pude vender mi vehículo. Solo tuve que firmar los documentos y autenticarlos y ellos se encargaron del resto. Felicitaciones y gracias por el buen servicio.",
+      "starts": 5
+    },
+    {
+      "name": "Yeison Jaramillo",
+      "date": "Hace 2 semanas",
+      "text": "Excelente servicio ,brindan mucha confianza en todo el proceso",
+      "starts": 5
+    }
+  ],
+  "reviewRating": "4.6",
+  "reviewCount": 198,
+  "sellRequirements": [
+    "Máximo 100.000 km",
+    "Modelo 2010 en adelante",
+    "Vehículo no blindado"
+  ],
+  "financingReferenceAnnualRate": 22,
+  "legal": {
+    "terms": [
+      {
+        "type": "heading",
+        "text": "1. Disposiciones generales"
+      },
+      {
+        "type": "paragraph",
+        "text": "En esta oportunidad queremos presentar nuestros Términos y Condiciones, que constituyen el contrato aplicable respecto de la comercialización de los productos y/o servicios ofertados por medio del canal de venta de WhatsApp del centro de negocios “AUTOMOTORES ANDINA SAS”."
+      },
+      {
+        "type": "paragraph",
+        "text": "Al acceder y usar el canal de WhatsApp, usted autoriza el tratamiento de datos personales por parte de JUAN MANUEL RESTREPO OSPINA, identificado conCC No. 1088305478 y acepta quedar vinculado por los presentes Términos. Estos se aplicarán a todas las transacciones comerciales realizadas por este medio."
+      },
+      {
+        "type": "paragraph",
+        "text": "LO INVITAMOS A LEER DETENIDAMENTE NUESTROS TÉRMINOS Y CONDICIONES. QUIEN NO LOS ACEPTE DEBERÁ ABSTENERSE DE UTILIZAR ESTE CANAL."
+      },
+      {
+        "type": "heading",
+        "text": "2. Definiciones"
+      },
+      {
+        "type": "list",
+        "text": "Automotores Andina: Establecimiento de Comercio especializado en compra y venta de vehículos usados."
+      },
+      {
+        "type": "list",
+        "text": "CENTRO DE NEGOCIOS “Automotores Andina”: Operaciones logísticas para comercialización de vehículos."
+      },
+      {
+        "type": "list",
+        "text": "CLIENTE: Persona natural o jurídica que accede al canal de WhatsApp."
+      },
+      {
+        "type": "list",
+        "text": "CANAL DE VENTA DE WHATSAPP: Aplicación para facilitar la compra-venta de vehículos."
+      },
+      {
+        "type": "list",
+        "text": "DATO PERSONAL: Información asociada a una persona natural determinada o determinable."
+      },
+      {
+        "type": "list",
+        "text": "TRATAMIENTO: Cualquier operación sobre datos personales."
+      },
+      {
+        "type": "list",
+        "text": "RESPONSABLE DEL TRATAMIENTO: Persona que decide sobre el tratamiento de los datos."
+      },
+      {
+        "type": "list",
+        "text": "ENCARGADO DEL TRATAMIENTO: Persona que trata los datos por cuenta del Responsable."
+      },
+      {
+        "type": "heading",
+        "text": "3. Titularidad"
+      },
+      {
+        "type": "paragraph",
+        "text": "El canal es operado por JUAN MANUEL RESTREPO OSPINA, identificado con CC No. 1088305478 , domiciliado en Pereira - Risaralda, Colombia."
+      },
+      {
+        "type": "heading",
+        "text": "4. Aceptación"
+      },
+      {
+        "type": "paragraph",
+        "text": "El uso del canal implica la aceptación total de estos términos, así como de la política de tratamiento de datos personales."
+      },
+      {
+        "type": "heading",
+        "text": "5. Modificación de los términos"
+      },
+      {
+        "type": "paragraph",
+        "text": "Automotores Andina podrá modificarlos sin previo aviso. El cliente será responsable de revisar las actualizaciones."
+      },
+      {
+        "type": "heading",
+        "text": "5.1 No retroactividad"
+      },
+      {
+        "type": "paragraph",
+        "text": "Las modificaciones aplican desde su publicación. Las nuevas condiciones rigen de inmediato cuando son por razones legales."
+      },
+      {
+        "type": "heading",
+        "text": "6. Capacidad"
+      },
+      {
+        "type": "paragraph",
+        "text": "Solo personas con capacidad jurídica pueden contratar. Si es menor de edad o inhabilitado legalmente, deberá hacerlo por medio de un representante legal."
+      },
+      {
+        "type": "heading",
+        "text": "7. Objeto"
+      },
+      {
+        "type": "paragraph",
+        "text": "Estos términos regulan la relación entre el CLIENTE yAutomotores Andina respecto al uso del canal y la compra de vehículos."
+      },
+      {
+        "type": "heading",
+        "text": "8. Productos comercializados"
+      },
+      {
+        "type": "paragraph",
+        "text": "Se comercializan vehículos usados. Las publicaciones pueden realizarse en Instagram y el catálogo de WhatsApp Business."
+      },
+      {
+        "type": "heading",
+        "text": "9. Procedimientos"
+      },
+      {
+        "type": "list",
+        "text": "Elegir vehículos en Instagram."
+      },
+      {
+        "type": "list",
+        "text": "Enviar foto o referencia por WhatsApp."
+      },
+      {
+        "type": "list",
+        "text": "Programar visita para revisión y cierre de compra."
+      },
+      {
+        "type": "heading",
+        "text": "10. Suministro de datos personales"
+      },
+      {
+        "type": "paragraph",
+        "text": "Se requiere nombre, cédula, teléfono, dirección, correo, etc. para brindar asesoría y cerrar la compra. El CLIENTE autoriza su tratamiento."
+      },
+      {
+        "type": "heading",
+        "text": "11. Obligaciones y prohibiciones del cliente"
+      },
+      {
+        "type": "list",
+        "text": "Enviar comunicaciones respetuosas."
+      },
+      {
+        "type": "list",
+        "text": "No realizar transacciones fraudulentas."
+      },
+      {
+        "type": "list",
+        "text": "No usar sin autorización imágenes o contenidos deAutomotores Andina."
+      },
+      {
+        "type": "heading",
+        "text": "12. Declaraciones"
+      },
+      {
+        "type": "list",
+        "text": "Los recursos provienen de actividades lícitas."
+      },
+      {
+        "type": "list",
+        "text": "No se encuentra inmerso en investigaciones por delitos graves."
+      },
+      {
+        "type": "heading",
+        "text": "13. Política de tratamiento de datos"
+      },
+      {
+        "type": "paragraph",
+        "text": "Los datos serán tratados conforme a la Ley 1581 de 2012. El CLIENTE puede consultar la política en: Dirección: Calle 7 # 25-02 Correo: infoautomotoresandina@gmail.comTeléfono: 3026606878"
+      },
+      {
+        "type": "heading",
+        "text": "14. PQRSF"
+      },
+      {
+        "type": "paragraph",
+        "text": "Enviar PQRSF al correo infoautomotoresandina@gmail.com con nombre, cédula, explicación y autorización para tratar datos."
+      },
+      {
+        "type": "heading",
+        "text": "15. Resolución de controversias"
+      },
+      {
+        "type": "paragraph",
+        "text": "Se intentará solución directa. De no resolverse, se acudirá a la Cámara de Comercio de Pereira - Risaralda. En última instancia, se acudirá a la vía judicial."
+      },
+      {
+        "type": "heading",
+        "text": "16. Legislación aplicable"
+      },
+      {
+        "type": "paragraph",
+        "text": "Se regirá por las leyes de la República de Colombia."
+      },
+      {
+        "type": "heading",
+        "text": "17. Indemnidad"
+      },
+      {
+        "type": "paragraph",
+        "text": "El CLIENTE mantendrá indemne a Automotores Andina por cualquier reclamo relacionado con el uso del canal o el incumplimiento de estos términos."
+      },
+      {
+        "type": "heading",
+        "text": "18. Nulidad parcial"
+      },
+      {
+        "type": "paragraph",
+        "text": "Si alguna disposición es inválida, las demás seguirán vigentes y se interpretarán de forma que logren el propósito original."
+      },
+      {
+        "type": "heading",
+        "text": "19. Comunicaciones electrónicas"
+      },
+      {
+        "type": "paragraph",
+        "text": "Al comunicarse electrónicamente con Automotores Andina, el CLIENTE acepta recibir notificaciones y documentos legales por este medio."
+      },
+      {
+        "type": "heading",
+        "text": "20. Notificaciones"
+      },
+      {
+        "type": "paragraph",
+        "text": "Correo electrónico: infoautomotoresandina@gmail.comWhatsApp: 3026606878Dirección: Calle 7 # 25-02 Pereira - Risaralda"
+      }
+    ],
+    "privacy": [
+      {
+        "type": "heading",
+        "text": "Aviso de Privacidad - Protección de Datos Personales AUTOMOTORES ANDINA SAS"
+      },
+      {
+        "type": "paragraph",
+        "text": "Se permite informar que:"
+      },
+      {
+        "type": "paragraph",
+        "text": "En cumplimiento a lo estipulado en la Ley 1581 de 2012 y a lo previsto en el numeral 3 y el parágrafo del artículo 10 del Decreto 1377 de 2013, con el objeto de informar a todas las personas cuyos datos personales se encuentran en nuestras bases de datos, y teniendo en cuenta la imposibilidad de solicitar autorización en forma individual, AUTOMOTORES ANDINA SAS informa que hace uso del mecanismo alternativo establecido en el citado numeral y manifiesta que los datos personales incluidos en sus bases de datos se han recopilado para el desarrollo de diversos procedimientos relacionados directamente con su objeto social."
+      },
+      {
+        "type": "paragraph",
+        "text": "El uso y manejo de los mismos se efectúa bajo estrictos estándares de responsabilidad, dentro de los cuales está el respeto al debido proceso y a la protección de la información."
+      },
+      {
+        "type": "paragraph",
+        "text": "Los datos registrados en nuestras bases de datos son, entre otros: datos personales tales como teléfonos, correos electrónicos, fecha de nacimiento, edad, información del vehículo, cédula y demás especificados en la política. En todo caso, en cualquier momento el titular de la información podrá revocar su consentimiento y ejercer su derecho a la supresión de datos personales consagrado en la Ley 1581 de 2012."
+      },
+      {
+        "type": "paragraph",
+        "text": "Si usted desea consultar información o solicitar la supresión de sus datos personales de nuestras bases de datos, agradecemos se comunique dentro de los 30 días siguientes a la publicación del presente aviso al correo electrónico infoautomotoresandina@gmail.com o al teléfono 3026606878. Si decide no hacerlo, vencido el referido plazo, consideraremos autorizado el tratamiento de sus datos personales. Lo anterior, sin perjuicio del derecho que asiste al titular de información en cualquier tiempo de consultar, conocer, actualizar sus datos personales, o solicitar su supresión o rectificación."
+      },
+      {
+        "type": "paragraph",
+        "text": "AUTOMOTORES ANDINA SAS puede contener hipervínculos a otros sitios de internet, los cuales a su vez pueden tener políticas de privacidad diferentes a las de AUTOMOTORES ANDINA SAS."
+      },
+      {
+        "type": "paragraph",
+        "text": "Para más información, por favor, consulte la Política de Tratamiento de Información en el correo arriba referido."
+      },
+      {
+        "type": "heading",
+        "text": "Protocolo Adicional de Manejo de la Información Personal"
+      },
+      {
+        "type": "paragraph",
+        "text": "A continuación se enuncian algunos parámetros particulares frente al manejo de información personal que rigen la actividad desarrollada por AUTOMOTORES ANDINA SAS, en adelante AUTOMOTORES ANDINA SAS. El presente documento se desarrolla en cumplimiento de la Ley 1581 de 2012, “Por la cual se dictan disposiciones generales para la protección de datos personales”, según la cual todas las entidades públicas o privadas que manejen datos personales deberán adoptar un manual interno de políticas y procedimientos para garantizar el adecuado cumplimiento de la ley y en especial, para asegurar el efectivo ejercicio de los derechos de los titulares. Toda la información recibida por AUTOMOTORES ANDINA SAS a través de sus diferentes canales de comunicación, en medios digitales o impresos, y que conforma nuestras bases de datos, obtenidos de clientes, proveedores, empleados o contratistas, y demás titulares de información, se rige por las siguientes políticas de uso."
+      },
+      {
+        "type": "paragraph",
+        "text": "Medidas de Seguridad:Los datos personales registrados en nuestra base de datos son almacenados directamente por los encargados del manejo de los mismos, limitando su acceso al uso de usuarios restringidos con su debida clave de acceso. En ese sentido, AUTOMOTORES ANDINA SAS empleará todas las medidas humanamente posibles para evitar cualquier tipo de filtraciones a agentes extraños."
+      },
+      {
+        "type": "paragraph",
+        "text": "Política de Destrucción: En virtud del principio de finalidad de la información, esta asume una naturaleza temporal y en tal medida, AUTOMOTORES ANDINA SAS asume la responsabilidad de proceder a eliminar diligentemente toda información de sus bases de datos, una vez transcurridos 5 años desde el último uso que se le haya dado a la información. Lo anterior sin perjuicio de que el titular solicite la eliminación de su información en cualquier momento. Para tal propósito, el responsable del tratamiento de los datos deberá hacer una revisión anual para determinar qué información ha cumplido con el periodo de existencia aquí estipulado y, por ende, se hace necesaria su eliminación. Una vez organizado el listado de la información a destruir, se verificará la existencia de copias físicas o digitales de la misma, para asegurar la eliminación total de la misma, para que así se proceda a eliminar de la base de datos digital centralizada."
+      },
+      {
+        "type": "paragraph",
+        "text": "Política de Incidentes y Filtraciones: En caso de detectarse extravío o filtraciones de información o manipulación no autorizada de la misma, el Responsable del Tratamiento o el Representante Legal de la sociedad, deberán proceder a realizar el reporte ante la Superintendencia de Industria y Comercio, por medio de la página web y la Delegatura para la Protección de Datos Personales. Adicionalmente de ser procedente deberá interponer la denuncia ante la autoridad policial competente sobre la pérdida de la información a la que haya lugar.Suministro de Información frente a Aliados Comerciales: Para el suministro de información a aliados comerciales, el responsable del tratamiento debe solicitar previamente al tercero que recibirá la información la Política de Tratamiento de Datos personales implementado por ellos, y sentar claridad sobre la finalidad con la que se transmite la información. De igual forma AUTOMOTORES ANDINA SASdeberá asegurarse que cada información que se transmita debe ser debidamente autorizada su traslado por el titular con anterioridad al mismo.Información de Prevención contra Hackers y filtración de informaciones: Recomendaciones Generales: Mantenga su contraseña segura, en caso de olvidarlaAUTOMOTORES ANDINA SAS Company le generará una nueva previa solicitud de su parte, esta nueva contraseña será enviada a su correo electrónico. Las recomendaciones que le damos a la hora de asignar una clave son las siguientes:"
+      },
+      {
+        "type": "list",
+        "text": "Hacer claves de una longitud mínima de 8 caracteres. Los caracteres vuelven a la contraseña más robusta."
+      },
+      {
+        "type": "list",
+        "text": "Realizar combinaciones alfanuméricas. Estas son más difíciles de descubrir, teniendo en cuenta las diversas posibilidades de combinación de los caracteres."
+      },
+      {
+        "type": "list",
+        "text": "Utilizar distintas claves para cada servicio. De esta manera, si la contraseña es revelada, será más difícil para el atacante acceder al resto de las plataformas del usuario."
+      },
+      {
+        "type": "list",
+        "text": "Evitar palabras comunes. Quienes conocen de informática pueden revelar una clave en cuestión de segundos."
+      },
+      {
+        "type": "list",
+        "text": "Tener especial cuidado al elegir la pregunta secreta que solicitan en algunas plataformas. En las redes sociales hay mucha información personal que se vuelve pública y puede ser utilizada para descifrarla."
+      },
+      {
+        "type": "list",
+        "text": "Prestar atención cuando se accede a los servicios desde espacios públicos. Existen ciertos programas que facilitan la interferencia de las plataformas y pueden almacenar las pulsaciones del teclado."
+      },
+      {
+        "type": "list",
+        "text": "Cambiar periódicamente las claves. Esto aumenta el nivel de seguridad de las credenciales."
+      },
+      {
+        "type": "list",
+        "text": "Cambiar las vocales por números. Por ejemplo, “Mi Clave es segura”: M3 Cl1v2 2s s2g5r1."
+      },
+      {
+        "type": "list",
+        "text": "Utilizar reglas mnemotécnicas, como elegir la primera letra de cada una de las palabras de una frase fácil de recordar. Por ejemplo, “Mi Clave es segura”: MCe10vs."
+      },
+      {
+        "type": "list",
+        "text": "Claves basadas en un mismo patrón. Por ejemplo, añadir al final las iniciales de cada red social: MCe10vFB (Facebook), MCe10vTR (Twitter), MCe10vsGM (Gmail)."
+      },
+      {
+        "type": "heading",
+        "text": "Técnicas utilizadas por hackers para acceder a información"
+      },
+      {
+        "type": "paragraph",
+        "text": "Phishing: Una forma de ingeniería social donde a través de una página web o un correo electrónico, un estafador se hace pasar por una empresa o persona de confianza y le pide la contraseña a un usuario, quien deliberadamente confía y entrega la información."
+      },
+      {
+        "type": "paragraph",
+        "text": "Tabnapping: El usuario sin darse cuenta entra en una página web muy similar a la que normalmente usa, pero no se da cuenta de que la dirección electrónica es diferente y así entrega toda su información en un sitio web no genuino."
+      },
+      {
+        "type": "paragraph",
+        "text": "Robo en el sitio web: Muchos de los sitios web tienen grandes debilidades en seguridad, como por ejemplo almacenar los nombres de usuario y contraseñas en texto claro, o sea sin cifrar, lo que los hackers saben muy bien cómo aprovechar."
+      },
+      {
+        "type": "paragraph",
+        "text": "Brute force: Se refiere a la obtención de las contraseñas a través de prueba y error, similar a intentar todas las combinaciones posibles de una cerradura. La forma más conocida de ataque de fuerza bruta es con un software para descifrar contraseñas, que metódicamente trata con millones de contraseñas en un nombre de usuario. Una contraseña débil puede ser violada en cuestión de horas."
+      },
+      {
+        "type": "paragraph",
+        "text": "Eavesdropping: Muchas personas piensan que están 100% seguros porque solo visitan sitios seguros y respetados, pero no saben que un JavaScript malicioso puede estar presente en cualquier navegador en cualquier sistema. El registro de pulsaciones de teclas es algo que se hace con este tipo de scripts, quedando capturadas todos los usuarios y las contraseñas digitadas mientras la sesión esté abierta."
+      },
+      {
+        "type": "paragraph",
+        "text": "Respaldo de Videograbaciones: Las videograbaciones podrán estar almacenadas en un servidor externo de un tercero, debiendo estar disponible en un lugar visible tal información al público. De igual forma el responsable del tratamiento debe solicitar previamente al tercero que recibirá la información la Política de Tratamiento de Datos personales implementado por quien administrará las grabaciones."
+      },
+      {
+        "type": "paragraph",
+        "text": "Gestión de Usuarios: Para el acceso a la base de datos centralizada, el acceso a esta es de personal restringido limitándose a personal de contabilidad, activaciones de producto, gerencia y cargos administrativos, y comercial. Teniendo cada uno un usuario de acceso con una contraseña, la cual es de uso privativo de cada persona, y no podrá ser compartida bajo ninguna circunstancia."
+      },
+      {
+        "type": "heading",
+        "text": "Información del Responsable del Tratamiento"
+      },
+      {
+        "type": "list",
+        "text": "Nombre de la Empresa: AUTOMOTORES ANDINA SAS"
+      },
+      {
+        "type": "list",
+        "text": "Nombre del Encargado: JUAN MANUEL RESTREPO OSPINA"
+      },
+      {
+        "type": "list",
+        "text": "Domicilio: Calle 7 # 25-02 Pereira - Risaralda"
+      },
+      {
+        "type": "list",
+        "text": "Teléfono: 3026606878"
+      },
+      {
+        "type": "list",
+        "text": "Correo electrónico: infoautomotoresandina@gmail.com"
+      },
+      {
+        "type": "list",
+        "text": "Página web: https://www.automotoresandina.com.co/"
+      }
+    ],
+    "authorization": [
+      {
+        "type": "paragraph",
+        "text": "En cumplimiento de la Ley 1581 de 2012 y del Decreto reglamentario 1377 de 2013, con el presente acuerdo usted acepta de manera libre, expresa y espontanea, que ha sido informado(a) por parte de INVERSIONES GRUPO ANDINA S.A.S, sociedad comercial colombiana, identificada con NIT No. 901.945.721 - 6, sobre la facultad de aceptar o declinar el presente documento, el cual se encuentra elaborado de conformidad con las políticas de tratamiento de datos personales implementadas que se encuentra disponible para su consulta en la página web de la compañía https://automotoresandina.com.co. Además, que está siendo informado de manera clara sobre los datos que serán recolectados, de su facultad de responder o no a las preguntas que versen sobre datos personales sensibles o datos personales de menores y las finalidades específicas del tratamiento para las cuales se obtiene el consentimiento. Para el efecto, se podrá recolectar la siguiente información, datos personales como nombre, identificación, edad, dirección de residencia, condiciones económicas, dirección de correo electrónico, referencias personales, antecedentes legales o judiciales y demás información que se considere relevante, la información consignada en redes sociales y en internet, así como otra información relevante proveniente del titular. En virtud del presente, manifiesta de manera libre, expresa, espontanea y voluntaria que autoriza a INVERSIONES GRUPO ANDINA S.A.S, o a quien represente sus derechos, a sus aliados y/o colaboradores, para llevar a cabo la recolección y el tratamiento de sus datos personales conforme a las políticas establecidas para este fin, los cuales tendrán las siguientes finalidades:"
+      },
+      {
+        "type": "list",
+        "text": "Realizar todas las gestiones necesarias tendientes a confirmar y actualizar la información suministrada."
+      },
+      {
+        "type": "list",
+        "text": "Establecer, mantener y terminar una relación contractual."
+      },
+      {
+        "type": "list",
+        "text": "La autorización para el tratamiento de los datos personales se realizará desde la etapa pre contractual, con el fin de indagar información personal de cualquier carácter, pertenezca o no al dominio público."
+      },
+      {
+        "type": "list",
+        "text": "Frente a la información de menores de edad, dicha información será tratada únicamente bajo la autorización de su representante legal, siempre y cuando no ponga en peligro la integridad del menor. Siempre que para la gestión del crédito se considere necesaria la consecución de información adicional, se solicitará autorización expresa del titular cuando dicha información sea considerada como de carácter sensible."
+      },
+      {
+        "type": "list",
+        "text": "Para el cabal cumplimiento de la gestión humana de la empresa, se autoriza a INVERSIONES GRUPO ANDINA S.A.S, a compartir con terceros la información otorgada, dado que esto es necesario para el adelantamiento de dicha labor y la efectiva prestación del servicio requerido. Dicho lo anterior, la información suministrada por usted será compartida con terceros aliados bajo acuerdo de confidencialidad, compartiéndose únicamente la información estrictamente necesaria. En todo caso declara que ha sido informado(a) sobre la facultad con que cuenta de ejercer los derechos previstos en el artículo 8 de la ley 1581 de 2012, en cualquier momento, en especial:"
+      },
+      {
+        "type": "list",
+        "text": "Conocer, actualizar y rectificar sus datos personales frente a los responsables del tratamiento o encargados del tratamiento. Este derecho lo podrá ejercer, entre otros, frente a datos parciales, inexactos, incompletos, fraccionados, que induzcan a error, o aquellos cuyo tratamiento este expresamente prohibido o no haya sido autorizado;"
+      },
+      {
+        "type": "list",
+        "text": "Solicitar prueba de la autorización otorgada al responsable del tratamiento, salvo cuando expresamente se exceptúe como requisito para este, de conformidad como lo previsto en el artículo 10 de la mencionada ley;"
+      },
+      {
+        "type": "list",
+        "text": "Ser informado por el responsable del tratamiento o del encargado del tratamiento, previa solicitud, respecto del uso que le ha dado a sus datos personales;"
+      },
+      {
+        "type": "list",
+        "text": "Presentar ante la Superintendencia de Industria y Comercio quejas, por infracciones a lo dispuesto en la referida ley y las demás normas que la modifiquen, adicionen o complementen;"
+      },
+      {
+        "type": "list",
+        "text": "Revocar la autorización y/o solicitar la supresión del dato cuando el tratamiento no se respeten los principios, derechos y garantías constitucionales y legales. La revocatoria y/o supresión procederá cuando la Superintendencia de Industria y Comercio haya determinado que en el tratamiento el responsable ha incurrido en conductas contrarias a la ley y a la constitución, sin perjuicio del derecho que asiste a los titulares de la información de solicitar revocatoria o supresión de la información con los siguientes datos: nombre y apellidos, domicilios a efectos de notificaciones, petición en que se concreta la solicitud, fecha, firma de la persona interesada, estas medidas no procederán cuando exista una obligación legal o contractual que me imponga el deber de pertenecer en la base de datos de INVERSIONES GRUPO ANDINA S.A.S.., y/o quien represente sus derechos;"
+      },
+      {
+        "type": "list",
+        "text": "Acceder en forma gratuita a sus datos personales que hayan sido objeto de tratamiento."
+      },
+      {
+        "type": "paragraph",
+        "text": "El responsable de tratamiento de la información es,INVERSIONES GRUPO ANDINA S.A.S, sociedad comercial colombiana identificada con NIT. 901.945.721 - 6, quienes se encontrarán ubicados en la Avenida Sur #23-31, en la ciudad de Pereira, Risaralda, quien como medio de atención al cliente tendrá el célular 3127788730, así como sus medios de recepción de PQRS, tanto fisicas, a la dirección antes mencionada, como en el correo electrónico automotoresandina@gmail.com."
+      },
+      {
+        "type": "paragraph",
+        "text": "La comunicación escrita debe contener una información clara y precisa de cara a la información que puntualmente requiere frente a sus datos personales, con el fin de poderle brindar una pronta y satisfactoria respuesta. Por último, siempre que usted solicite que se elimine determinada información proporcionada, ésta no será en adelante visible al público, no obstante, será conservada por INVERSIONES GRUPO ANDINA S.A.S, para fines estadísticos o requerimientos de autoridades competentes. La información que usted suministre de terceros aINVERSIONES GRUPO ANDINA S.A.S, deberá estar autorizada por el titular de los datos, especialmente para el caso de las referencias comerciales, siendo indispensable para la verificación y posterior contacto por parte de la entidad. En consecuencia, la entidad no será responsable ante cualquier reclamación de terceros por dicha información. Usted es responsable de que la información suministrada a INVERSIONES GRUPO ANDINA S.A.S sea veraz, actual y completa, siendo responsable por la imprecisión y/o falsedad consignada en la misma. Para ello, la suscripción del presente documento se considerará también como un desistimiento expreso de las responsabilidad que la falsedad o imprecisión de la información pueda generar en la sociedad, para lo cualINVERSIONES GRUPO ANDINA S.A.S podrá repetir en contra de quien otorga los datos, sea judicial, extra judicial o administrativamente."
+      },
+      {
+        "type": "paragraph",
+        "text": "De tal manera y, en procura de una adecuada prestación del servicio, debe mantener actualizada su información conforme ésta vaya cambiando. Usted puede elevar cualquier inquietud a través del correo electrónico infoautomotoresandina@gmail.com o a través de los canales de radicación de PQRS habilitados en la plataforma."
+      }
+    ]
+  },
+  "deliveries": [
+    "/assets/delivery-1.webp",
+    "/assets/delivery-2.webp",
+    "/assets/delivery-3.webp",
+    "/assets/delivery-4.webp",
+    "/assets/delivery-5.webp",
+    "/assets/delivery-6.webp",
+    "/assets/delivery-7.webp",
+    "/assets/delivery-8.webp",
+    "/assets/delivery-9.webp",
+    "/assets/delivery-10.webp",
+    "/assets/delivery-11.webp"
+  ],
+  "partners": [
+    "/assets/banco-1.png",
+    "/assets/banco-2.png",
+    "/assets/banco-3.png",
+    "/assets/banco-4.png",
+    "/assets/banco-5.png",
+    "/assets/banco-6.png",
+    "/assets/banco-7.png",
+    "/assets/automas.png"
+  ],
+  "team": [
+    {
+      "name": "Juan Manuel Restrepo",
+      "role": "Gerente General",
+      "image": "/assets/team-gerencia.webp"
+    },
+    {
+      "name": "Laura Herrera Montoya",
+      "role": "Gerente Administrativa",
+      "image": "/assets/team-admin.webp"
+    },
+    {
+      "name": "Mauricio Cadavid",
+      "role": "Asesor Comercial",
+      "image": "/assets/team-asesor2.webp"
+    },
+    {
+      "name": "Santiago López",
+      "role": "Asesor Comercial",
+      "image": "/assets/team-asesor1.webp"
+    },
+    {
+      "name": "Laura Serna",
+      "role": "Líder CRM",
+      "image": "/assets/team-digital3.webp"
+    },
+    {
+      "name": "Daniel Alejandro Guauta",
+      "role": "Líder Digital",
+      "image": "/assets/team-digital2.webp"
+    },
+    {
+      "name": "Christian Samir Aguirre",
+      "role": "Asistente Digital",
+      "image": "/assets/team-digital1.webp"
+    },
+    {
+      "name": "Angelica Ciro",
+      "role": "Contadora",
+      "image": "/assets/team-contable.webp"
+    },
+    {
+      "name": "Natalia Hurtado",
+      "role": "Asistente contable",
+      "image": "/assets/team-auxiliar.webp"
+    },
+    {
+      "name": "Yuliana Muñoz",
+      "role": "Asistente administrativa",
+      "image": "/assets/team-asistente.webp"
+    },
+    {
+      "name": "Esteban Restrepo",
+      "role": "Supernumerario",
+      "image": "/assets/team-supernumerario.webp"
+    }
+  ]
+}

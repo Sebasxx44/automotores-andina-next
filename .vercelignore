@@ -1,0 +1,4 @@
+research/
+.git/
+node_modules/
+*.zip

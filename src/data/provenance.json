@@ -1,0 +1,23 @@
+{
+  "source": "https://www.automotoresandina.com.co/",
+  "catalogSource": "https://www.automotoresandina.com.co/catalogo",
+  "capturedAt": "2026-10-29",
+  "vehicleCount": 106,
+  "catalogMode": "Instantánea del catálogo público; disponibilidad y precios sujetos a confirmación con Automotores Andina.",
+  "imageOrigin": "Fotografías originales publicadas por Automotores Andina. Portadas optimizadas a WebP, sin alterar su contenido. Galerías enlazadas al CDN público original.",
+  "publicPages": [
+    "/",
+    "/catalogo",
+    "/vender",
+    "/financiar",
+    "/servicios",
+    "/nosotros",
+    "/preguntas",
+    "/terminos_y_condiciones",
+    "/politica_de_privacidad",
+    "/autorizacion_datos_personales_igas"
+  ],
+  "vehiclePagePattern": "/ficha_tecnica/:id",
+  "financingPortal": "https://automotoresandina.financiakarz.com/",
+  "credits": "Marca, fotografías, catálogo y contenido corporativo pertenecen a sus respectivos titulares. Rediseño independiente para portfolio."
+}
