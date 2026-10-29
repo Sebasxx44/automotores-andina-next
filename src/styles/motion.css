@@ -1,0 +1,43 @@
+#main-content { position: relative; }
+/* Scroll reveals keep content visible until progressively enhanced by the observer. */
+@media (prefers-reduced-motion: no-preference) {
+  .motion-enter {
+    animation: andina-reveal 850ms cubic-bezier(.2,.7,.2,1) both;
+    animation-delay: var(--motion-delay, 0ms);
+  }
+
+  .hero-car {
+    translate: 0 var(--hero-shift, 0px);
+    scale: var(--hero-scale, 1);
+  }
+
+  .route-enter-active { transition: opacity 300ms ease, translate 450ms cubic-bezier(.2,.7,.2,1); }
+  .route-leave-active { position: absolute; inset: 0; width: 100%; pointer-events: none; transition: opacity 160ms ease; }
+  .route-enter-from { opacity: 0; translate: 0 12px; }
+  .route-leave-to { opacity: 0; }
+
+  .button-ta > svg, .text-link > svg, .hero-explore > svg { transition: translate 350ms cubic-bezier(.2,.7,.2,1); }
+  .button-ta:hover > svg, .text-link:hover > svg, .hero-explore:hover > svg { translate: 3px -2px; }
+  .button-ta:active { transform: translateY(0) scale(.97); }
+  .experience-card > svg { transition: translate 500ms cubic-bezier(.2,.7,.2,1); }
+  .experience-card:hover > svg { translate: 0 -5px; }
+  .hero-scroll > svg { animation: andina-scroll-hint 2200ms ease-in-out 3; }
+}
+
+.desktop-nav > a { position: relative; }
+.desktop-nav > a::after { content: ''; position: absolute; left: 0; right: 0; bottom: 5px; height: 1px; background: #a0a0a7; scale: 0 1; transform-origin: left; transition: scale 350ms ease; }
+.desktop-nav > a:hover::after, .desktop-nav > a.router-link-active::after { scale: 1 1; }
+
+@keyframes andina-reveal {
+  from { opacity: 0; translate: 0 24px; }
+  to { opacity: 1; translate: 0 0; }
+}
+@keyframes andina-scroll-hint {
+  0%, 100% { translate: 0 0; opacity: .6; }
+  50% { translate: 0 5px; opacity: 1; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .motion-enter, .hero-scroll > svg { animation: none !important; }
+  .hero-car { translate: none; scale: none; }
+  .route-enter-active, .route-leave-active { transition: none; }
+}

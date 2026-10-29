@@ -8,13 +8,17 @@
       <div class="detail-layout">
         <div class="detail-visual">
           <div class="detail-gallery" role="region" aria-label="Fotografías del vehículo" @keydown.left="gallery.previous" @keydown.right="gallery.next">
-            <img :src="product.currentImage.value" :alt="`${product.vehicle.value.title}, fotografía ${gallery.activeIndex.value + 1}`" fetchpriority="high" />
+            <Transition name="vehicle-photo">
+              <img :key="product.currentImage.value" :src="product.currentImage.value" :alt="`${product.vehicle.value.title}, fotografía ${gallery.activeIndex.value + 1}`" fetchpriority="high" decoding="async" draggable="false" />
+            </Transition>
             <template v-if="product.images.value.length > 1"><button class="gallery-prev" type="button" aria-label="Fotografía anterior" @click="gallery.previous"><ChevronLeft :size="19" /></button><button class="gallery-next" type="button" aria-label="Siguiente fotografía" @click="gallery.next"><ChevronRight :size="19" /></button></template>
             <span class="gallery-counter"><Images :size="13" /> {{ gallery.activeIndex.value + 1 }} / {{ product.images.value.length }}</span>
           </div>
-          <div class="detail-thumbnails" aria-label="Seleccionar fotografía">
-            <button v-for="(image, index) in product.images.value" :key="image" type="button" :class="{ active: gallery.activeIndex.value === index }" :aria-label="`Ver fotografía ${index + 1}`" :aria-pressed="gallery.activeIndex.value === index" @click="gallery.select(index)"><img :src="image" alt="" loading="lazy" /></button>
-          </div>
+          <CarouselTA :key="product.vehicle.value.id" class="detail-thumbnails" :count="product.images.value.length" label="Seleccionar fotografía del vehículo" :desktop-items="5" :tablet-items="4" :mobile-items="3" :gap="10" :active-index="gallery.activeIndex.value" compact>
+            <template #slide="{ index }">
+              <button class="detail-thumbnail" type="button" :class="{ active: gallery.activeIndex.value === index }" :aria-label="`Ver fotografía ${index + 1}`" :aria-pressed="gallery.activeIndex.value === index" @click="gallery.select(index)"><img :src="product.images.value[index]" alt="" loading="lazy" decoding="async" draggable="false" /></button>
+            </template>
+          </CarouselTA>
         </div>
         <aside class="detail-purchase">
           <span class="eyebrow">TU PRÓXIMO DESTINO</span>
@@ -45,6 +49,7 @@ import { ArrowLeft, ArrowUpRight, CalendarDays, Check, ChevronLeft, ChevronRight
 import ActionHeaderTA from '@/components/shared/ActionHeaderTA.vue';
 import ButtonTA from '@/components/ButtonTA.vue';
 import VehicleCardTA from '@/components/VehicleCardTA.vue';
+import CarouselTA from '@/components/CarouselTA.vue';
 import { formatMileage, formatPrice } from '@/modules/catalog/catalog.service';
 import { useVehicleDetail } from '@/modules/catalog/composables/useVehicleDetail';
 import { useVehicleFavorites } from '@/modules/catalog/composables/useVehicleFavorites';
@@ -61,14 +66,16 @@ const { actions: favoriteActions } = useVehicleFavorites();
 .detail-save[aria-pressed="true"] { color: #2997ff; border-color: #2997ff; }
 .detail-layout { display: grid; grid-template-columns: minmax(0,1.5fr) minmax(300px,1fr); gap: 32px; align-items: start; margin-top: 34px; }
 .detail-gallery { position: relative; overflow: hidden; border: 1px solid #29292c; border-radius: 28px; aspect-ratio: 4/3; background: #0e0e0e; }
-.detail-gallery > img { width: 100%; height: 100%; object-fit: cover; }
-.detail-gallery > button { position: absolute; top: calc(50% - 20px); width: 40px; height: 40px; display: grid; place-items: center; background: #0009; color: #f5f5f7; border: 1px solid #ffffff40; border-radius: 50%; cursor: pointer; backdrop-filter: blur(12px); }
+.detail-gallery > img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+.vehicle-photo-enter-active, .vehicle-photo-leave-active { transition: opacity 260ms ease; }
+.vehicle-photo-enter-from, .vehicle-photo-leave-to { opacity: 0; }
+.detail-gallery > button { position: absolute; top: calc(50% - 22px); z-index: 2; width: 44px; height: 44px; display: grid; place-items: center; background: #0009; color: #f5f5f7; border: 1px solid #ffffff40; border-radius: 50%; cursor: pointer; backdrop-filter: blur(12px); }
 .gallery-prev { left: 18px; }.gallery-next { right: 18px; }
-.gallery-counter { position: absolute; bottom: 20px; right: 20px; display: inline-flex; gap: 7px; align-items: center; padding: 8px 12px; color: #f5f5f7; border-radius: 99px; background: #0009; font-size: 11px; backdrop-filter: blur(12px); }
-.detail-thumbnails { display: flex; gap: 10px; overflow-x: auto; margin-top: 12px; padding: 2px 2px 8px; scrollbar-width: thin; scrollbar-color: #333336 transparent; }
-.detail-thumbnails button { flex: 0 0 88px; height: 64px; padding: 0; border: 2px solid transparent; border-radius: 12px; overflow: hidden; background: #1d1d1f; cursor: pointer; opacity: .55; transition: opacity .2s; }
-.detail-thumbnails button.active { border-color: #2997ff; opacity: 1; }
-.detail-thumbnails button:hover { opacity: 1; }.detail-thumbnails img { width: 100%; height: 100%; object-fit: cover; }
+.gallery-counter { position: absolute; z-index: 2; bottom: 20px; right: 20px; display: inline-flex; gap: 7px; align-items: center; padding: 8px 12px; color: #f5f5f7; border-radius: 99px; background: #0009; font-size: 11px; backdrop-filter: blur(12px); }
+.detail-thumbnails { margin-top: 14px; }
+.detail-thumbnail { display: block; width: 100%; aspect-ratio: 4/3; max-height: 92px; padding: 0; border: 2px solid transparent; border-radius: 12px; overflow: hidden; background: #1d1d1f; cursor: pointer; opacity: .55; transition: opacity .2s; }
+.detail-thumbnail.active { border-color: #2997ff; opacity: 1; }
+.detail-thumbnail:hover { opacity: 1; }.detail-thumbnail img { width: 100%; height: 100%; object-fit: cover; }
 .detail-purchase { padding: 32px; border: 1px solid #29292c; border-radius: 28px; background: #0e0e0e; display: flex; flex-direction: column; gap: 12px; }
 .detail-price { display: flex; align-items: baseline; flex-wrap: wrap; gap: 8px; font-size: clamp(26px,3vw,38px); font-weight: 500; letter-spacing: -1.5px; margin: 7px 0 0; color: #f5f5f7; }
 .detail-price > span { color: #86868b; font-size: 11px; letter-spacing: 0; }
@@ -85,5 +92,7 @@ const { actions: favoriteActions } = useVehicleFavorites();
 .detail-disclaimer { max-width: 760px; margin: 45px auto 0; text-align: center; font-size: 10px; line-height: 1.8; color: #86868b; }.detail-disclaimer a { color: #2997ff; display: inline-flex; gap: 4px; align-items: center; }
 .detail-not-found { min-height: 55vh; padding-top: 50px; }
 @media (max-width: 960px) { .detail-layout { grid-template-columns: 1fr; }.detail-purchase { max-width: none; }.detail-highlights { grid-template-columns: repeat(4,1fr); }.detail-specifications { gap: 40px; }.detail-related-grid { gap: 16px; } }
-@media (max-width: 640px) { .detail-page { padding-top: 24px; }.detail-layout { gap: 20px; }.detail-purchase { padding: 26px; }.detail-highlights { grid-template-columns: 1fr 1fr; }.detail-specifications { grid-template-columns: 1fr; gap: 22px; margin-top: 50px; padding-bottom: 30px; }.detail-related-grid { grid-template-columns: 1fr; }.detail-features ul { grid-template-columns: 1fr 1fr; }.detail-related { margin-top: 44px; }.detail-thumbnails button { flex-basis: 75px; height: 56px; }.detail-disclaimer { margin-top: 32px; } }
+@media (max-width: 640px) { .detail-page { padding-top: 24px; }.detail-layout { gap: 20px; }.detail-purchase { padding: 26px; }.detail-highlights { grid-template-columns: 1fr 1fr; }.detail-specifications { grid-template-columns: 1fr; gap: 22px; margin-top: 50px; padding-bottom: 30px; }.detail-related-grid { grid-template-columns: 1fr; }.detail-features ul { grid-template-columns: 1fr 1fr; }.detail-related { margin-top: 44px; }.detail-thumbnail { max-height: 80px; }.detail-disclaimer { margin-top: 32px; } }
+.detail-thumbnail:focus-visible { outline: 2px solid #2997ff; outline-offset: -5px; }
+@media (prefers-reduced-motion: reduce) { .vehicle-photo-enter-active, .vehicle-photo-leave-active, .detail-thumbnail { transition: none; } }
 </style>

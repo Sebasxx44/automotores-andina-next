@@ -5,15 +5,17 @@
         <p class="eyebrow">HISTORIAS REALES</p>
         <h2 id="community-title">El mejor destino.<br /><span class="muted">Una nueva historia.</span></h2>
       </div>
-      <p class="gallery-hint"><MoveHorizontal :size="16" :stroke-width="1.3" aria-hidden="true" /> Desliza para descubrir más historias</p>
+      <p class="gallery-hint"><MoveHorizontal :size="16" :stroke-width="1.3" aria-hidden="true" /> Más historias, a un movimiento</p>
     </div>
 
-    <div class="delivery-gallery" tabindex="0" role="region" aria-label="Galería de entregas de vehículos. Desliza o usa las flechas del teclado para explorar.">
-      <figure v-for="(photo, index) in siteContent.deliveries" :key="photo" class="delivery-photo">
-        <img :src="photo" :alt="`Entrega de vehículo en Automotores Andina, fotografía ${index + 1}`" width="960" height="720" loading="lazy" decoding="async" />
-        <figcaption><span class="delivery-number">{{ String(index + 1).padStart(2, '0') }}</span>Una nueva historia en Andina</figcaption>
-      </figure>
-    </div>
+    <CarouselTA :count="siteContent.deliveries.length" label="Galería de entregas de vehículos">
+      <template #slide="{ index }">
+        <figure class="delivery-photo">
+          <img :src="siteContent.deliveries[index]" :alt="`Entrega de vehículo en Automotores Andina, fotografía ${index + 1}`" width="960" height="720" loading="lazy" decoding="async" draggable="false" />
+          <figcaption><span class="delivery-number">{{ String(index + 1).padStart(2, '0') }}</span>Una nueva historia en Andina</figcaption>
+        </figure>
+      </template>
+    </CarouselTA>
 
     <div class="community-reviews">
       <figure v-for="testimonial in testimonials" :key="testimonial.name" class="testimonial">
@@ -34,6 +36,7 @@
 // IMPORTS
 import { MoveHorizontal, Quote, Star } from '@lucide/vue';
 import siteContent from '@/data/site-content.json';
+import CarouselTA from '@/components/CarouselTA.vue';
 
 // PROPS/CONSTANTS/ROUTE/RUNTIME CONFIG
 const testimonials = [
@@ -64,12 +67,7 @@ const testimonials = [
 .community-section { overflow: hidden; }
 .section-heading .gallery-hint { display: flex; align-items: center; gap: 10px; font-size: 11px; white-space: nowrap; }
 .gallery-hint svg { flex-shrink: 0; }
-.delivery-gallery { display: grid; grid-auto-flow: column; grid-auto-columns: calc((100% - 44px) / 3); gap: 22px; overflow-x: auto; scroll-snap-type: x mandatory; overscroll-behavior-inline: contain; padding-bottom: 24px; scrollbar-width: thin; scrollbar-color: #414146 transparent; }
-.delivery-gallery::-webkit-scrollbar { height: 4px; }
-.delivery-gallery::-webkit-scrollbar-track { background: transparent; }
-.delivery-gallery::-webkit-scrollbar-thumb { background: #414146; border-radius: 999px; }
-.delivery-gallery:focus-visible { outline: 2px solid var(--color-electric-link); outline-offset: -2px; border-radius: 28px 28px 4px 4px; }
-.delivery-photo { margin: 0; min-width: 0; scroll-snap-align: start; }
+.delivery-photo { margin: 0; min-width: 0; }
 .delivery-photo img { width: 100%; height: auto; aspect-ratio: 4 / 3; object-fit: cover; border-radius: 28px; background: var(--color-graphite); }
 .delivery-photo figcaption { display: flex; align-items: center; gap: 13px; padding: 19px 4px 0; font-size: 11px; color: #b4b4bc; line-height: 1.6; }
 .delivery-number { color: var(--color-ash); font-size: 9px; font-variant-numeric: tabular-nums; letter-spacing: 1px; }
@@ -85,14 +83,12 @@ const testimonials = [
 .reviews-source > p:last-child { font-size: 10px; color: var(--color-ash); }
 
 @media (max-width: 1000px) {
-  .delivery-gallery { grid-auto-columns: calc((100% - 22px) / 2); }
   .community-reviews { gap: 24px; }
   .testimonial { padding-inline: 0; }
 }
 
 @media (max-width: 760px) {
   .section-heading .gallery-hint { font-size: 10px; }
-  .delivery-gallery { grid-auto-columns: 100%; gap: 16px; padding-bottom: 20px; }
   .delivery-photo figcaption { font-size: 11px; }
   .community-reviews { grid-template-columns: 1fr; gap: 30px; margin-top: 38px; }
   .testimonial { padding: 0 2px 28px; border-bottom: 1px solid var(--border); }
